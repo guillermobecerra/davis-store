@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --fuentePrincipal: 'Montserrat', sans-serif;
+
+    --azulprimario: #2E3E80;
+    --azulsecundario: #759CC0;
+    --negroprimario: #302E2C;
+    --naranjaprimario: #FF7500;
+    --naranjasecundario: #FFB25B;
+    --fondo: #F8F1E0;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-color: var(--fondo);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+/* nav */
+.nav {
+    background-color: var(--negroprimario);
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 8rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul a {
+    margin: 0 5rem;
+    font-size: 1.2rem;
+    color: white;
+    font-family: var(--fuentePrincipal);
+}
+
+.nav button {
+    margin: 0 1rem;
+    padding: .75rem 1rem;
+    background-color: var(--azulsecundario);
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: var(--naranjaprimario);
+}
+
+.nav button:hover {
+    background-color: var(--naranjaprimario);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
