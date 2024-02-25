@@ -13,16 +13,34 @@
 <body class="body">
     <!-- Header -->
     <header class="header">
-        <nav class="nav">
-            <a href="index.html"><img src="./resources/Logo white.png" alt="Logo de Davis Store"></a>
-            <ul>
-                <li><a href="./pages/gallery.html">Galería</a></li>
-                <li><a href="./pages/cart.html">Pedidos</a></li>
-                <li><a href="./pages/about.html">Sobre mí</a></li>
-                <li><a href="./pages/contact.html">Contacto</a></li>
-            </ul>
-            <a href="login.html"><button>Iniciar sesión</button></a>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html"><img src="./resources/Logo white.png" alt="Logo de Davis Store"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/gallery.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/cart.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <a href="login.html"><button class="login-button">Iniciar sesión</button></a>
+                </div>
+            </div>
         </nav>
+
     </header>
     <!-- Main -->
     <main class="main">
