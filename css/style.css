@@ -354,3 +354,38 @@ a {
         transform: scaleX(-1);
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    about                                   */
+/* -------------------------------------------------------------------------- */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "about-content about-content about-img";
+}
+
+.about-content {
+    grid-area: about-content;
+    margin: auto 4rem;
+}
+
+.about-img {
+    grid-area: about-img;
+    margin: 2rem;
+}
+
+.about-content h2,
+.about-content h4 {
+    font-family: var(--fuentePrincipal);
+}
+
+.davis-store {
+    font-weight: 700;
+    color: var(--azulprimario);
+    font-family: var(--fuentePrincipal);
+}
