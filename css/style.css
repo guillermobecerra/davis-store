@@ -12,7 +12,7 @@
     --azulsecundario: #759CC0;
     --negroprimario: #302E2C;
     --naranjaprimario: #FF7500;
-    --naranjasecundario: #FFB25B;
+    --naranjasecundario: #ffb25b;
     --fondo: #F8F1E0;
     --blanco: #ffffff;
     --negro: #000000;
@@ -181,20 +181,20 @@ a {
     grid-area: img-4;
 }
 
-.card-img {
+#index-card-img {
     width: 100%;
     height: 20rem;
     object-fit: cover;
 }
 
-.card-img-overlay {
+#index-card-img-overlay {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.card-title,
-.card-text {
+#index-card-title,
+#index-card-text {
     color: var(--blanco);
     margin-bottom: .3rem;
 }
@@ -235,20 +235,20 @@ a {
         grid-area: img-4;
     }
 
-    .card-img {
+    #index-card-img {
         height: 40rem;
     }
 
-    .card-img-overlay {
+    #index-card-img-overlay {
         align-items: center;
     }
 
-    .card-title {
+    #index-card-title {
         font-size: 2rem;
         text-shadow: 0px 0px 10px var(--negro);
     }
 
-    .card-text {
+    #index-card-text {
         font-size: 1.5rem;
         text-shadow: 0px 0px 10px var(--negro);
     }
@@ -389,3 +389,61 @@ a {
     color: var(--azulprimario);
     font-family: var(--fuentePrincipal);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   gallery                                  */
+/* -------------------------------------------------------------------------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "gallery-filter gallery-img gallery-img gallery-img";
+}
+
+.gallery-filter {
+    grid-area: gallery-filter;
+    background-color: rgba(255, 178, 91, .5);
+    border-radius: .3rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.gallery-img {
+    grid-area: gallery-img;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: .5rem;
+}
+
+.precio {
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.gallery-img .card {
+    width: 30%;
+}
+
+.gallery-img .card img {
+    height: 25rem;
+    padding: .5rem;
+
+}
+
+.gallery-btn {
+    background-color: var(--azulsecundario);
+    border: none;
+}
+
+.gallery-btn:hover {
+    background-color: var(--naranjaprimario);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    cart                                    */
+/* -------------------------------------------------------------------------- */
